@@ -36,19 +36,19 @@ Bancos
 Para o ambiente de desenvolvimento será necessário utilizar `yarn install`
 
 Tela de login
-![alt text](https://github.com/danielborbavareladossantos/cardFlow/blob/master/docs/image-1.png?raw=true)
+![alt text](https://github.com/danielborbavareladossantos/cardFlow/blob/main/docs/image-1.png?raw=true)
 
 Tela de dashboard
-![alt text](https://github.com/danielborbavareladossantos/cardFlow/blob/master/docs/image-2.png?raw=true)
+![alt text](https://github.com/danielborbavareladossantos/cardFlow/blob/main/docs/image-2.png?raw=true)
 
 Chat
-![alt text](https://github.com/danielborbavareladossantos/cardFlow/blob/master/docs/image-3.png?raw=true)
+![alt text](https://github.com/danielborbavareladossantos/cardFlow/blob/main/docs/image-3.png?raw=true)
 
 Tela de configurações
-![alt text](https://github.com/danielborbavareladossantos/cardFlow/blob/master/docs/image-4.png?raw=true)
+![alt text](https://github.com/danielborbavareladossantos/cardFlow/blob/main/docs/image-4.png?raw=true)
 
 Utilização do socket em backend
-![alt text](https://github.com/danielborbavareladossantos/cardFlow/blob/master/docs/image-5.png?raw=true)
+![alt text](https://github.com/danielborbavareladossantos/cardFlow/blob/main/docs/image-5.png?raw=true)
 
 ## Credits
 
