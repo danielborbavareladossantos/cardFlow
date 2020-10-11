@@ -3,7 +3,6 @@ import { Container } from './styles';
 import io from "socket.io-client";
 import { Form, Input } from '@rocketseat/unform';
 
-import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
 import Messages from './Messages';
@@ -39,6 +38,7 @@ export default () => {
         socket.on("previousMessages", data => {
             setArrayMessages(data);
         });
+        socket.emit('loadMessage');
     };
 
     useEffect(() => {
@@ -47,10 +47,9 @@ export default () => {
 
     return (
         <Container>
-            <Paper className={classes.paper}>
                 {arrayMessages && arrayMessages.length>0 &&
-                    <Messages arrayMessages={arrayMessages}/>
-                }
+                        <Messages arrayMessages={arrayMessages}/>
+                    }
                 {arrayMessages && arrayMessages.length===0 &&
                     <Typography variant="body1" gutterBottom>
                         Não há nenhuma mensagem!
@@ -69,8 +68,6 @@ export default () => {
                     />
 
                 </Form>
-
-            </Paper>
         </Container>
     );
 }

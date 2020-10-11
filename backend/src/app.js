@@ -23,7 +23,13 @@ class App {
 
       socket.on('sendMessage', data => {
         messages.push(data);
-        // socket.broadcast.emit('receivedMessage', data);
+        // atualiza nos outros sockets
+        socket.broadcast.emit('previousMessages',messages);
+        // atualiza no seu proprio
+        socket.emit('previousMessages',messages);
+      });
+
+      socket.on('loadMessage', () => {
         socket.emit('previousMessages',messages);
       });
     });

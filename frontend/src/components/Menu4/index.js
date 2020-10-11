@@ -94,7 +94,7 @@ const ResponsiveDrawer = (props) => {
                     <Grid item xs={3} align={'right'}>
                         <Grid container spacing={1}>
                             <Grid item xs={10}>
-                                <Link to="/profile">{filterText(profile.name)}</Link>
+                                <Link onClick={()=>{goto('/profile')}}>{filterText(profile.name)}</Link>
                                 <br/>
                                 <Link onClick={handleSignOut}>{'Sair'}</Link>
                             </Grid>

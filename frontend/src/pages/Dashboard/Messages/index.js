@@ -18,7 +18,14 @@ export default (props) => {
         <Paper className={classes.paper}>
             {
                 props.arrayMessages.map((item, i) => {
-                    return <Ballon key={i} message={item.message} own={(item.author===profile.name)}/>;
+                    return (
+                        <Ballon
+                            key={i}
+                            message={item.message}
+                            author={item.author}
+                            own={(item.author===profile.name)}
+                        />
+                    );
                 })
             }
         </Paper>

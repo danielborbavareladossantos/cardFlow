@@ -12,11 +12,15 @@ export default (props) => {
         <>
             {props.own &&
                 <Paper className={classes.paperOwn}>
+                    <b>{props.author}</b>
+                    <br/>
                     {props.message}
                 </Paper>
             }
             {!props.own &&
                 <Paper className={classes.paperOther}>
+                    <b>{props.author}</b>
+                    <br/>
                     {props.message}
                 </Paper>
             }

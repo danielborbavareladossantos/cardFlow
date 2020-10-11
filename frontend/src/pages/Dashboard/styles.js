@@ -7,14 +7,8 @@ export const Container = styled.div`
 `;
 
 export const useStyles = makeStyles((theme) => ({
-    paper: {
-        padding: 20,
-        width: 600,
-        position: 'absolute',
-        height: '80%'
-    },
     input: {
         padding: 5,
         width: '100%'
-    }
+    },
 }));
