@@ -21,8 +21,7 @@ export default (props) => {
                     return (
                         <Ballon
                             key={i}
-                            message={item.message}
-                            author={item.author}
+                            props={item}
                             own={(item.author===profile.name)}
                         />
                     );

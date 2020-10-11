@@ -15,4 +15,7 @@ export const useStyles = makeStyles((theme) => ({
         backgroundColor: '#666666',
         color: 'white'
     },
+    date: {
+        textAlign: 'right'
+    }
 }));

@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Paper from '@material-ui/core/Paper';
+import {Typography, Paper} from '@material-ui/core';
 
 import { useStyles } from './styles';
 
@@ -12,16 +11,38 @@ export default (props) => {
         <>
             {props.own &&
                 <Paper className={classes.paperOwn}>
-                    <b>{props.author}</b>
-                    <br/>
-                    {props.message}
+                    <Typography variant="subtitle2" gutterBottom>
+                        <b>{props.props.author}</b>
+                    </Typography>
+                    <Typography variant="body2" gutterBottom>
+                        {props.props.message}
+                    </Typography>
+                    <Typography
+                        className={classes.date}
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                    >
+                        {props.props.date}
+                    </Typography>
                 </Paper>
             }
             {!props.own &&
                 <Paper className={classes.paperOther}>
-                    <b>{props.author}</b>
-                    <br/>
-                    {props.message}
+                    <Typography variant="subtitle2" gutterBottom>
+                        <b>{props.props.author}</b>
+                    </Typography>
+                    <Typography variant="body2" gutterBottom>
+                        {props.props.message}
+                    </Typography>
+                    <Typography
+                        className={classes.date}
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                    >
+                        {props.props.date}
+                    </Typography>
                 </Paper>
             }
         </>

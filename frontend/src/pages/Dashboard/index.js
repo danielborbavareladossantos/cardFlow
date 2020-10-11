@@ -3,6 +3,9 @@ import { Container } from './styles';
 import io from "socket.io-client";
 import { Form, Input } from '@rocketseat/unform';
 
+import { format } from 'date-fns';
+import pt from 'date-fns/locale/pt';
+
 import Typography from '@material-ui/core/Typography';
 
 import Messages from './Messages';
@@ -26,7 +29,8 @@ export default () => {
         if (tf_message.length) {
             const messageObject = {
                 author: profile.name,
-                message: tf_message
+                message: tf_message,
+                date: format(new Date(), "dd/MM/yyyy HH:mm:ss", { locale: pt })
             };
             socket.emit('sendMessage', messageObject);
             setArrayMessages(arrayMessages);

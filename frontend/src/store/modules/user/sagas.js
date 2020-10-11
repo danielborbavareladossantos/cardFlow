@@ -6,6 +6,7 @@ import * as UserActions from './actions';
 
 function* updateProfile({ payload }) {
     try {
+
         const { name, email, avatar_id, ...rest } = payload.data;
 
         const data = {
