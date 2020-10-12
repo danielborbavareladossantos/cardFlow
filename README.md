@@ -2,32 +2,32 @@
 
 Projeto para conversa em grupo de pessoas em que deseja aprender uma nova lingua, esse projeto deverá ter modulos para armazenar decks.
 
--O frontend desse projeto é criado em React.
--O backend é feito em NodeJS com sequelize de ORM.
+- O frontend desse projeto é criado em React.
+- O backend é feito em NodeJS com sequelize de ORM.
 
 Para ambos, recomenda-se a utilização do gerenciador de pacotes Yarn e para edição de código o VSCode.
 
 ## Tecnologias utilizadas
 
 Frontend
--React
--Material Ui
--Redux
+- React
+- Material Ui
+- Redux
 
 Backend
--Express
--Sequelize
+- Express
+- Sequelize
 
 Bancos
--Postgre
--Mongo
--Redis
+- Postgre
+- Mongo
+- Redis
 
 ## Extensões utilizadas no vscode
 
--Prettier
--EditorConfig
--Eslint
+- Prettier
+- EditorConfig
+- Eslint
 
 ## Build da aplicação
 
